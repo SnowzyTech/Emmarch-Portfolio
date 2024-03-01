@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+<div class="form">
+    <form action="https://formspree.io/f/xbjejdry" method="POST">
+        <input type="text" name="name"  placeholder="Name" id="name" autocomplete="off">
+        <input type="email" name="email" placeholder="email" id="email" autocomplete="off">
+        <input type="text" name="subject" placeholder="subject" id="subject" autocomplete="off">
+        <textarea id="message" name="message" placeholder="Message" cols="30" rows="10"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+</div>
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+    // var btn = document.getElementById('btn');
+    // btn.addEventListener('click', (e) => {
+        // e.preventDefault()
+        // var name = document.getElementById('name').value;
+        // var email = 
+        // var subject = document.getElementById('subject').value;
+        // var message = document.getElementById('message').value;
+        // var body = 'name: ' +name + '<br/> email: ' + email + '<br/> subject' + 
+        // subject + '<br/> message' + message;
+
+//         function sendEmail() {
+//         Email.send({
+//             Host : "smtp.elasticemail.com",
+//             Username : "ihekunaemmanuelc@gmail.com",
+//             Password : "70CCB4A0B034DBD5885FE76FBB9C5B5AD8B4",
+//             To : 'emmanuelmiles77@gmail.com',
+//             From : document.getElementById('email').value,
+//             Subject : subject,
+//             Body : "Name: " + document.getElementById('name').value
+//                   + "<br> Email: " + document.getElementById('email').value
+//                   + "<br> subject: " + document.getElementById('subject').value
+//                   + "<br> message: " + document.getElementById('message').value
+// }).then(
+//   message => alert(message)
+// );
+
+
+//     } 
+    // })
+</script>
+</body>
+</html>
