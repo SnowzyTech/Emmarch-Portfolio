@@ -83,3 +83,24 @@ function asideSectionTogglerBtn() {
         allSection[i].classList.toggle("open");
     }
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var portfolioItems = document.querySelectorAll(".portfolio-item");
+
+    function showPortfolioItems() {
+        portfolioItems.forEach(function(item, index) {
+            setTimeout(function() {
+                item.classList.add("active");
+            }, index * 200); // Adjust the delay as needed
+        });
+    }
+
+    // Ensure that images are loaded before applying animation
+    window.addEventListener("load", function() {
+        showPortfolioItems();
+    });
+});
+
+
+
